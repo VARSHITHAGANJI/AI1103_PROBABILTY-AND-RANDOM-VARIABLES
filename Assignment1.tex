@@ -1,0 +1,51 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{\textbf{PROBABILITY AND RANDOM VARIABLES (AI1103)}\\ Assignment 1}
+\author{GANJI VARSHITHA-AI20BTECH11009}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Question}
+\textbf{Assigned Problem 6.9}
+\\
+If A and B are two events such that $A\subset B$ and $P(B)\neq 0$, then which of the following is correct?
+\begin{enumerate}
+   \item P($\frac{A}{B}$) = $\frac{P(B)}{P(A)}$
+   \item P($\frac{A}{B}$) $<$ P(A)
+   \item P($\frac{A}{B}$) $\geq$ P(A)
+   \item None of these
+\end{enumerate}
+\section*{Solution}
+We know that A is the subset of B. \\
+$\Rightarrow$ Every element of A is an element of B.\\
+\begin{equation}
+\label{eq1}
+  \therefore A\cap B = A
+ \end{equation}
+We know that 
+\begin{equation}
+\label{eq2}
+ \begin{split}
+ P\Big(\frac{A}{B}\Big)&= \frac{P(A\cap B)}{P(B)}  \\ 
+ &=\frac{P(A)}{P(B)}
+ \end{split}
+\end{equation}
+Given $0<P(B)\leq1$
+\\ $\Rightarrow \frac{1}{P(B)} \geq 1$\\
+
+\textnormal{By multiplying with P(A) on both sides of the inequality, we get\\
+\\
+$\frac{P(A)}{P(B)}\geq$ }{\normalsize{P(A)}}\\
+
+Using \ref{eq2}, we have 
+$$P \Big (\frac{A}{B} \Big) \geq P(A)$$
+Therefore, option 3 is correct.
+
+
+\end{document}
